@@ -9,7 +9,7 @@ spec:
     spec:
       chart: podinfo
       version: ">=1.0.0 <2.0.0"
-      path: appchart
+      path: ./appchart
       sourceRef:
         kind: GitRepository
         name: demo
