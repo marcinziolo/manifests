@@ -1,0 +1,24 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: demo
+  namespace: flux-system
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: podinfo
+      version: ">=1.0.0 <2.0.0"
+      path: appchart
+      sourceRef:
+        kind: GitRepository
+        name: demo
+        namespace: flux-system
+      interval: 1m
+  upgrade:
+    remediation:
+      remediateLastFailure: true
+  values:
+    image: "mcreativo/hello-world"
+    appName: "hello-world"
+    environment: "dev"
