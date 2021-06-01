@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: appChart
+  name: appchart
 spec:
   interval: 5m
   url: https://github.com/marcinziolo/demo/appchart
