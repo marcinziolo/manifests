@@ -4,5 +4,5 @@ metadata:
   name: appChart
 spec:
   interval: 5m
-  url: https://github.com/marcinziolo/demo/appChart
+  url: https://github.com/marcinziolo/demo/appchart
 
