@@ -3,6 +3,6 @@ kind: HelmRepository
 metadata:
   name: appchart
 spec:
-  interval: 5m
+  interval: 1m
   url: https://github.com/marcinziolo/demo/appchart
 
