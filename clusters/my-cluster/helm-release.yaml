@@ -4,10 +4,10 @@ metadata:
   name: demo
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 5m
   chart:
     spec:
-      chart: podinfo
+      chart: ./appchart
       version: ">=1.0.0 <2.0.0"
       sourceRef:
         kind: GitRepository
